@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/space_12"
+    android:orientation="vertical"
+    tools:context=".presentation.ui.characters.CharactersFragment">
+
+   <com.google.android.material.card.MaterialCardView
+       android:id="@+id/container_item_character"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:clickable="true"
+       android:focusable="true"
+       android:foreground="?android:attr/selectableItemBackground"
+       android:orientation="vertical"
+       app:cardCornerRadius="8dp"
+       app:cardElevation="2dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintDimensionRatio="H,1:1"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:orientation="vertical">
+
+         <androidx.appcompat.widget.AppCompatImageView
+             android:id="@+id/image_character_detail"
+             android:layout_width="match_parent"
+             android:layout_height="200dp"
+             android:scaleType="center"
+             app:shapeAppearance="?attr/shapeAppearanceMediumComponent" />
+
+         <androidx.appcompat.widget.AppCompatTextView
+             android:id="@+id/title_character_header"
+             style="@style/TextAppearance.AppCompat.Display1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/activity_horizontal_margin"
+             android:layout_marginEnd="@dimen/activity_horizontal_margin"
+             android:layout_marginStart="@dimen/activity_horizontal_margin"
+             android:textColor="@android:color/white"
+             tools:text="Character" />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_margin="@dimen/activity_horizontal_margin"
+             >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/status_character_header"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:textColor="@android:color/white"
+                tools:text="Status"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/species_character_header"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                tools:text="Species"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/gender_character_header"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                tools:text="Gender:" />
+         </LinearLayout>
+
+
+
+      </LinearLayout>
+
+   </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

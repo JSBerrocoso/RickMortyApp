@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">RickMortyApp</string>
+
+    <string name="ok">Ok</string>
+    <string name="title_home">Characters</string>
+
+    <string name="title_characters_not_found">Characters not found</string>
+    <string name="retry">Retry</string>
+    <string name="loading">Loading...</string>
+    <string name="server_error">Server connection error</string>
+    <string name="message_generic_error">" Error ocurred"</string>
+    <string name="title_generic_error">Ups!</string>
+    <string name="network_error">Network error</string>
+
+    <string name="search_title">Search</string>
+
+    <string name="gender">Gender: %s</string>
+    <string name="status">Status: %s</string>
+    <string name="species">Specie: %s</string>
+
+</resources>

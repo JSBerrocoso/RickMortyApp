@@ -1,0 +1,17 @@
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+project.ext {
+    //Android libraries
+
+    //DI
+    koin_version = '2.1.5'
+
+    baseUrl = "https://rickandmortyapi.com/api/"
+    baseImageUrl = "https://smarttv.orangetv.orange.es/stv/api/rtv/v1/images"
+
+}
